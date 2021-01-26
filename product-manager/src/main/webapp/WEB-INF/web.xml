@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <display-name>Product Manager</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>ShowProducts</servlet-name>
+    <servlet-class>ShowProducts</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowDetails</servlet-name>
+    <servlet-class>ShowDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AddProduct</servlet-name>
+    <servlet-class>AddProduct</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ShowProducts</servlet-name>
+    <url-pattern>/list</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowDetails</servlet-name>
+    <url-pattern>/view</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddProduct</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+</web-app>
