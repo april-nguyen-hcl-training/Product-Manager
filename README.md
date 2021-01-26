@@ -1,6 +1,6 @@
 # Product Manager
 
-Product Manager is a Java project using Servlets, Maven, Apache Tomcat, Hibernate, and a MySQL database.
+Product Manager is a Java project using Servlets, JSP, Maven, Apache Tomcat, Hibernate, and a MySQL database.
 
 ## Installation
 
