@@ -35,15 +35,6 @@ public class ProductDAO implements DAO<Product>{
         Long id = (Long)session.save(product);
         session.getTransaction().commit();
         session.close();
-        /**
-        String query = "INSERT INTO Product (name, price) VALUES (" + product.getName() +", " + product.getPrice() + ")";
-        int result = factory.openSession().createQuery(query).executeUpdate();
-        if(result > 0) {
-            return true;
-        } else {
-            return false;
-        }
-         **/
         return get(id);
     }
 
